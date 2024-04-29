@@ -1,3 +1,11 @@
+input_params:
+  lightcone_quantities:
+    - brightness_temp
+    - xH_box
+    - density
+  redshift: 12
+  max_redshift: 7
+
 astro_params:
   ### primary variables to change ###
   ## https://21cmfast.readthedocs.io/en/latest/reference/_autosummary/inputs/py21cmfast.inputs.AstroParams.html ##
@@ -99,7 +107,7 @@ user_params:
   # Flag to decide whether to use relative velocities. If True, POWER_SPECTRUM is automatically set to 5. Default False.
   USE_RELATIVE_VELOCITIES: false
 
-flag_params:
+flag_options:
   ### additional features which can be activated / deactivated if required ###
   ## https://21cmfast.readthedocs.io/en/latest/reference/_autosummary/inputs/py21cmfast.inputs.FlagOptions.html ##
   # use default parameters for this section
